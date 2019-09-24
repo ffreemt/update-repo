@@ -23,7 +23,9 @@ def update_repo(url=THISREPO, destdir='/content'):
         chdir(destdir)
     else:
         chdir(Path().home())
-
+        
+    repo_dirname = Path(url).stem
+    
     if Path(repo_dirname).exists():
         chdir(repo_dirname)
         print('git pull %s...' % url)
