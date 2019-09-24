@@ -26,7 +26,7 @@ def update_repo(url=THISREPO, destdir='/content'):
         chdir(destdir)
     else:
         chdir(Path().home())
-    if not Path('data').exists():
+    if not Path(repo_dirname).exists():
         print('git clone %s...' % url)
         # os.system('git clone %s' % url)
         proc = sp.Popen(
