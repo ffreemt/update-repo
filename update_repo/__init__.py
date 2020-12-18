@@ -1,3 +1,4 @@
+"Init."
 from .update_repo import update_repo
 
 __version__ = '0.0.7'
