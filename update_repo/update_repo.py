@@ -1,10 +1,8 @@
-'''
-clone/pull a repo to destdir
+"""clone/pull a repo to destdir.
 
 default repo: https://github.com/ffreemt/update-repo.git
 default destdir: '/content' for colab or ~ or HOME if '/content' does not exist
-
-'''
+"""
 
 from os import chdir
 from pathlib import Path
@@ -15,10 +13,10 @@ THISREPO = 'https://github.com/ffreemt/update-repo.git'
 
 
 def update_repo(url=THISREPO, destdir='/content'):
-    ''' git clone/pull git repo
-    >>> update_repo(repo_https_git_address)
-    '''
+    """git clone/pull git repo.
 
+    >>> update_repo(repo_https_git_address)
+    """
     if Path(destdir).exists():
         chdir(destdir)
     else:

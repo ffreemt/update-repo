@@ -1,6 +1,4 @@
-r'''
-Clone/pull a git repo
-'''
+r'''Clone/pull a git repo.'''
 # pylint: disable=invalid-name
 from pathlib import Path
 import re
