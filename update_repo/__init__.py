@@ -2,6 +2,5 @@
 from .update_repo import update_repo
 
 __all__ = ("update_repo",)
-__version__ = "0.0.7"
-__date__ = "2019.9.24"
+__version__ = "0.0.8"
 VERSION = __version__
